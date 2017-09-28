@@ -132,9 +132,9 @@ var education = {
     {
       "name": "CMU",
       "location": "Pittsburgh",
-      "degree": "CS",
+      "degree": "Bachelors",
       "dates": "Aug 2017 - Present",
-      "majors": ["Web Development"],
+      "majors": ["C.S."],
       "url": "udacity.com"
     }
   ],
@@ -156,17 +156,20 @@ var education = {
     var degree      = HTMLschoolDegree.replace("%data%", education.schools[0].degree);
     var dates       = HTMLschoolDates.replace("%data%", education.schools[0].dates);
     var loc         = HTMLschoolLocation.replace("%data%", education.schools[0].location);
-    var major       = HTMLschoolMajor.replace("%data%", education.schools[0].major);
+    var major       = HTMLschoolMajor.replace("%data%", education.schools[0].majors);
+
+    var title = HTMLonlineTitle.replace("%data%", education.online[0].class.title) + HTMLonlineSchool.replace("%data%", education.online[0].school.name);
+    var url = HTMLonlineURL.replace("%data%", education.online[index].school.url);
 
     // Education
     $("#education").append(HTMLschoolStart);
-    $(".education-entry:last").append(school);
-    $(".education-entry:last").append(degree);
+    $(".education-entry:last").append(school + degree);
     $(".education-entry:last").append(dates);
     $(".education-entry:last").append(loc);
     $(".education-entry:last").append(major);
 
-      }
+
+  }
 }
 
 // Display Projects

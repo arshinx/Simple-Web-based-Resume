@@ -22,6 +22,8 @@ var bio = {
     $("#header").append(HTMLheaderRole.replace("%data%", bio.role));
     // Pic
     $("#header").append(HTMLbioPic.replace("%data%", bio.biopic));
+    // Skills
+    $("#header").append(HTMLskillsStart);
   }
 };
 

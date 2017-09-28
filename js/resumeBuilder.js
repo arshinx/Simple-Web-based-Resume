@@ -33,12 +33,17 @@ var bio = {
     var twitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
     var github = HTMLgithub.replace("%data%", bio.contacts.github);
     var location = HTMLlocation.replace("%data%", bio.contacts.location);
-    // Display Contact Info
+    // Display Contact Info (Header)
     $("#topContacts").append(mobile);
     $("#topContacts").append(email);
     $("#topContacts").append(twitter);
     $("#topContacts").append(github);
     $("#topContacts").append(location);
+    // Display Contact Info (Footer)
+    $("#footerContacts").append(email);
+    $("#footerContacts").append(twitter);
+    $("#footerContacts").append(github);
+
   }
 };
 

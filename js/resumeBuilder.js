@@ -64,7 +64,10 @@ var work = {
       "location": "San Francisco, USA",
       "description": "Worked on developing an iOS app using Swift with social interaction capabilities."
     }
-  ]
+  ],
+  display: function() {
+    
+  }
 }
 
 // Display Work

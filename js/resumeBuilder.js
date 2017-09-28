@@ -151,15 +151,15 @@ var education = {
   display : function() {
 
     // Properties
-    var schoolName  = HTMLschoolName.replace("%data%", education.schools[0].name);
-    var school      = schoolName.replace("#", education.schools[0].url);
-    var degree      = HTMLschoolDegree.replace("%data%", education.schools[0].degree);
-    var dates       = HTMLschoolDates.replace("%data%", education.schools[0].dates);
-    var loc         = HTMLschoolLocation.replace("%data%", education.schools[0].location);
-    var major       = HTMLschoolMajor.replace("%data%", education.schools[0].majors);
+    var schoolName  = HTMLschoolName.replace("%data%", this.schools[0].name);
+    var school      = schoolName.replace("#", this.schools[0].url);
+    var degree      = HTMLschoolDegree.replace("%data%", this.schools[0].degree);
+    var dates       = HTMLschoolDates.replace("%data%", this.schools[0].dates);
+    var loc         = HTMLschoolLocation.replace("%data%", this.schools[0].location);
+    var major       = HTMLschoolMajor.replace("%data%", this.schools[0].majors);
 
-    var title = HTMLonlineTitle.replace("%data%", education.online[0].class.title) + HTMLonlineSchool.replace("%data%", education.online[0].school.name);
-    var url = HTMLonlineURL.replace("%data%", education.online[index].school.url);
+    var title = HTMLonlineTitle.replace("%data%", this.online[0].title) + HTMLonlineSchool.replace("%data%", this.online[0].school);
+    var url = HTMLonlineURL.replace("%data%", this.online[0].url);
 
     // Education
     $("#education").append(HTMLschoolStart);
@@ -168,7 +168,11 @@ var education = {
     $(".education-entry:last").append(loc);
     $(".education-entry:last").append(major);
 
-
+    // Online Classes
+    $(".education-entry:last").append(HTMLonlineClasses);
+    $(".education-entry:last").append(title.replace("#", education.online[0].url));
+    $(".education-entry:last").append(HTMLonlineDates.replace("%data%", education.online[0].dates));
+    $(".education-entry:last").append(url.replace("#", education.online[0].url));
   }
 }
 

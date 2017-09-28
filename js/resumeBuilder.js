@@ -75,20 +75,22 @@ var work = {
   ],
   // Display Data from this object
   display: function() {
-    // Begin
-    $("#workExperience").append(HTMLworkStart);
-    // Retrieve and Define Properties
-    var employer  = HTMLworkEmployer.replace("%data%", work.jobs[0].employer);
-    title         = HTMLworkTitle.replace("%data%", work.jobs[0].title);
-    employer      = employer.replace("#", work.jobs[0].url);
-    var dates     = HTMLworkDates.replace("%data%", work.jobs[0].dates)
-    var location  = HTMLworkLocation.replace("%data%", work.jobs[0].location);
-    var desc      = HTMLworkDescription.replace("%data%", work.jobs[0].description);
-    // Place Values for Display
-    $(".work-entry:last").append(employer + title);
-    $(".work-entry:last").append(dates);
-    $(".work-entry:last").append(location);
-    $(".work-entry:last").append(desc);
+    for (var obj in this.jobs) {
+      // Begin
+      $("#workExperience").append(HTMLworkStart);
+      // Retrieve and Define Properties
+      var employer  = HTMLworkEmployer.replace("%data%", work.jobs[0].employer);
+      title         = HTMLworkTitle.replace("%data%", work.jobs[0].title);
+      employer      = employer.replace("#", work.jobs[0].url);
+      var dates     = HTMLworkDates.replace("%data%", work.jobs[0].dates)
+      var location  = HTMLworkLocation.replace("%data%", work.jobs[0].location);
+      var desc      = HTMLworkDescription.replace("%data%", work.jobs[0].description);
+      // Place Values for Display
+      $(".work-entry:last").append(employer + title);
+      $(".work-entry:last").append(dates);
+      $(".work-entry:last").append(location);
+      $(".work-entry:last").append(desc);
+    }
   }
 }
 

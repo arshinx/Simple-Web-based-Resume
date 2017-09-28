@@ -88,6 +88,26 @@ var work = {
 work.display();
 // ------------
 
+// Projects
+var projects = {
+  "projects": [
+    {
+      "title": "Tahoe on Web",
+      "dates": "May 2015",
+      "description": "A Website featuring Lake Tahoe using various styling techniques — Built with HTML & CSS.",
+      "images": ["https://s3-us-west-2.amazonaws.com/udacity-profiles/production/projects/1926548703-project-09aa932ebb6307a312889e6ad84570e1.png?t=1506614005419"]
+    }
+  ],
+
+  display: function() {
+    
+  }
+}
+
+// Display Projects
+projects.display();
+// ------------
+
 // Education
 var education = {
   "schools": [
@@ -113,16 +133,4 @@ var education = {
   display : function() {
 
   }
-}
-
-// Projects
-var projects = {
-  "projects": [
-    {
-      "title": "Tahoe on Web",
-      "dates": "May 2015",
-      "description": "A Website featuring Lake Tahoe using various styling techniques — Built with HTML & CSS.",
-      "images": ["https://s3-us-west-2.amazonaws.com/udacity-profiles/production/projects/1926548703-project-09aa932ebb6307a312889e6ad84570e1.png?t=1506614005419"]
-    }
-  ]
 }

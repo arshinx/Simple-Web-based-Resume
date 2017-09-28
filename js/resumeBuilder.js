@@ -13,7 +13,7 @@ var bio = {
   },
   "skills": ["Presentations", "Mobile Development", "Tennis"],
   "welcomeMessage": "Greetings!",
-  "biopic": "images/fry.jpg",
+  "biopic": "images/image.jpg",
   // Display Data from this object
   display : function() {
     // Role

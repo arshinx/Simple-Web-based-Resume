@@ -1,4 +1,4 @@
-/* Data */
+/* Create and Display Content */
 
 // Bio
 var bio = {
@@ -40,9 +40,11 @@ var bio = {
     $("#topContacts").append(github);
     $("#topContacts").append(location);
     // Display Contact Info (Footer)
+    $("#footerContacts").append(mobile);
     $("#footerContacts").append(email);
     $("#footerContacts").append(twitter);
     $("#footerContacts").append(github);
+    $("#footerContacts").append(location);
 
   }
 };

@@ -17,15 +17,16 @@ var bio = {
   // Display Data from this object
   display : function() {
     // Role
-    $("#header").prepend(HTMLheaderRole.replace("%data%", bio.role));
+    $("#header").prepend(HTMLheaderRole.replace("%data%", this.role));
     // Name
-    $("#header").prepend(HTMLheaderName.replace("%data%", bio.name));
+    $("#header").prepend(HTMLheaderName.replace("%data%", this.name));
     // Pic
-    $("#header").append(HTMLbioPic.replace("%data%", bio.biopic));
-    // Skill Title and Skills
+    $("#header").append(HTMLbioPic.replace("%data%", this.biopic));
+    // Skill Title
     $("#header").append(HTMLskillsStart);
-    for (var i in bio.skills) {
-        $("#skills").append(HTMLskills.replace("%data%", bio.skills[i]));
+    // Display all Skills
+    for (var i in this.skills) {
+        $("#skills").append(HTMLskills.replace("%data%", this.skills[i]));
     }
     // Collect Contact info
     var mobile  = HTMLmobile.replace("%data%", bio.contacts.mobile);

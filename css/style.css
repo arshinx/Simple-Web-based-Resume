@@ -239,7 +239,7 @@ img {
   margin-left:  0;
 }
 
-img {
+.biopic {
   opacity: 0.9;
   box-shadow: inset 10px 10px 10px 10px #74cae4;
 }

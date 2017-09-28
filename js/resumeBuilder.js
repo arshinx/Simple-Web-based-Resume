@@ -61,15 +61,15 @@ var work = {
       "url": "thecompany.com",
       "title": "Software Developer Intern",
       "dates": "2016 - 2017",
-      "location": "San Francisco, USA",
+      "location": "San Francisco, CA, USA",
       "description": "Worked on developing an iOS app using Swift with social interaction capabilities."
     },
     {
-      "employer": "Company2",
-      "url": "company2.com",
+      "employer": "The Product X",
+      "url": "productx.com",
       "title": "Product Intern",
       "dates": "2015 - 2016",
-      "location": "San Francisco, USA",
+      "location": "San Jose, CA, USA",
       "description": "Worked on a mobile product."
     }
   ],

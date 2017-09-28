@@ -230,3 +230,8 @@ img {
     display: block;
   }
 }
+
+/* Education */
+.education-entry {
+  margin-left: 5px;
+}

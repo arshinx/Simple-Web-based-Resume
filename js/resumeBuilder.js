@@ -11,38 +11,44 @@ var bio = {
       "twitter": "@arshin",
       "location": "Palo Alto, CA"
   },
-  "skills": ["Presentations", "Web Design", "Tennis"],
+  "skills": ["Presentations", "Mobile Development", "Tennis"],
   "welcomeMessage": "Greetings!",
   "biopic": "images/fry.jpg"
 };
 
 // Education
 var education = {
-  "schools": [{
+  "schools": [
+    {
       "name": "CMU",
       "location": "Pittsburgh",
       "degree": "CS",
       "dates": "Aug 2017 - Present",
       "majors": ["Web Development"],
       "url": "udacity.com"
-  }],
+    }
+  ],
 
-  "online": [{
-    "title": "Front-End Web Developer"
+  "online": [
+    {
+    "title": "Front-End Web Developer",
     "dates": "July 2017 - Present",
     "school": "Udacity",
     "url": "https://www.udacity.com"
-  }]
+    }
+  ]
 }
 
 // Work
 var work = {
-  "jobs": [{
+  "jobs": [
+    {
       "employer": "The Company",
       "url": "thecompany.com",
       "title": "Software Developer Intern",
       "dates": "2016 - 2017",
       "location": "San Francisco, USA",
       "description": "Worked on developing an iOS app using Swift with social interaction capabilities."
-  }]
+    }
+  ]
 }

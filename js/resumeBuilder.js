@@ -72,7 +72,11 @@ var education = {
     "school": "Udacity",
     "url": "https://www.udacity.com"
     }
-  ]
+  ],
+  // Display Data from this object
+  display : function() {
+
+  }
 }
 
 // Work

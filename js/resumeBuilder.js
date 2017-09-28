@@ -25,9 +25,9 @@ var bio = {
     // Skill Title
     $("#header").append(HTMLskillsStart);
     // Display all Skills
-    for (var i in this.skills) {
-        $("#skills").append(HTMLskills.replace("%data%", this.skills[i]));
-    }
+    this.skills.forEach(function(skill) {
+      $("#skills").append(HTMLskills.replace("%data%", skill));
+    });
     // Collect Contact info
     var mobile  = HTMLmobile.replace("%data%", bio.contacts.mobile);
     var email   = HTMLemail.replace("%data%", bio.contacts.email);

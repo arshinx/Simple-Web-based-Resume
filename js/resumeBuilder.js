@@ -76,7 +76,8 @@ var work = {
   ],
   // Display Data from this object
   display: function() {
-    for (var obj in this.jobs) {
+    // Display all jobs/titles
+    this.jobs.forEach(function(job) {
 
       // Declare
       var employer;
@@ -87,18 +88,18 @@ var work = {
       // Begin
       $("#workExperience").append(HTMLworkStart);
       // Retrieve and Define Properties
-      employer  = HTMLworkEmployer.replace("%data%", work.jobs[obj].employer);
-      title     = HTMLworkTitle.replace("%data%", work.jobs[obj].title);
-      employer  = employer.replace("#", work.jobs[obj].url);
-      dates     = HTMLworkDates.replace("%data%", work.jobs[obj].dates)
-      location  = HTMLworkLocation.replace("%data%", work.jobs[obj].location);
-      desc      = HTMLworkDescription.replace("%data%", work.jobs[obj].description);
+      employer  = HTMLworkEmployer.replace("%data%", job.employer);
+      title     = HTMLworkTitle.replace("%data%", job.title);
+      employer  = employer.replace("#", job.url);
+      dates     = HTMLworkDates.replace("%data%", job.dates)
+      location  = HTMLworkLocation.replace("%data%", job.location);
+      desc      = HTMLworkDescription.replace("%data%", job.description);
       // Place Values for Display
       $(".work-entry:last").append(employer + title);
       $(".work-entry:last").append(dates);
       $(".work-entry:last").append(location);
       $(".work-entry:last").append(desc);
-    }
+    });
   }
 }
 

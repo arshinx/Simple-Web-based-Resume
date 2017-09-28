@@ -152,3 +152,7 @@ var education = {
 
   }
 }
+
+// Display Projects
+education.display();
+// ------------

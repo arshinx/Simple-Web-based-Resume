@@ -13,8 +13,20 @@ var bio = {
   },
   "skills": ["Presentations", "Mobile Development", "Tennis"],
   "welcomeMessage": "Greetings!",
-  "biopic": "images/fry.jpg"
+  "biopic": "images/fry.jpg",
+  // Display Data from this object
+  display : function() {
+    // Name
+    $("#header").prepend(HTMLheaderName.replace("%data%", bio.name));
+    // Role
+    $("#header").append(HTMLheaderRole.replace("%data%", bio.role));
+    // Pic
+    $("#header").append(HTMLbioPic.replace("%data%", bio.biopic));
+  }
 };
+
+// Display Bio
+bio.display();
 
 // Education
 var education = {

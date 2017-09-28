@@ -201,3 +201,7 @@ education.display();
 function addMap() {
     $("#mapDiv").append(googleMap);
 }
+
+// Display Map
+addMap();
+// ------------

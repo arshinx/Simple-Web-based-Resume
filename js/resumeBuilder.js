@@ -52,3 +52,15 @@ var work = {
     }
   ]
 }
+
+// Projects
+var projects = {
+  "projects": [
+    {
+      "title": "",
+      "dates": "",
+      "description": "A Website featuring Lake Tahoe using various styling techniques — Built with HTML & CSS.",
+      "images": [""]
+    }
+  ]
+}

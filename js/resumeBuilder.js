@@ -28,23 +28,23 @@ var bio = {
         $("#skills").append(HTMLskills.replace("%data%", bio.skills[i]));
     }
     // Collect Contact info
-    var mobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
-    var email = HTMLemail.replace("%data%", bio.contacts.email);
+    var mobile  = HTMLmobile.replace("%data%", bio.contacts.mobile);
+    var email   = HTMLemail.replace("%data%", bio.contacts.email);
     var twitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
-    var github = HTMLgithub.replace("%data%", bio.contacts.github);
-    var location = HTMLlocation.replace("%data%", bio.contacts.location);
+    var git     = HTMLgithub.replace("%data%", bio.contacts.github);
+    var loc     = HTMLlocation.replace("%data%", bio.contacts.location);
     // Display Contact Info (Header)
     $("#topContacts").append(mobile);
     $("#topContacts").append(email);
     $("#topContacts").append(twitter);
-    $("#topContacts").append(github);
-    $("#topContacts").append(location);
+    $("#topContacts").append(git);
+    $("#topContacts").append(loc);
     // Display Contact Info (Footer)
     $("#footerContacts").append(mobile);
     $("#footerContacts").append(email);
     $("#footerContacts").append(twitter);
-    $("#footerContacts").append(github);
-    $("#footerContacts").append(location);
+    $("#footerContacts").append(git);
+    $("#footerContacts").append(loc);
 
   }
 };
@@ -65,20 +65,22 @@ var work = {
       "description": "Worked on developing an iOS app using Swift with social interaction capabilities."
     }
   ],
-  // Function to Display Work Elements
+  // Display Data from this object
   display: function() {
+    // Begin
     $("#workExperience").append(HTMLworkStart);
+    // Retrieve and Define Properties
     var employer  = HTMLworkEmployer.replace("%data%", work.jobs[0].employer);
     title         = HTMLworkTitle.replace("%data%", work.jobs[0].title);
     employer      = employer.replace("#", work.jobs[0].url);
     var dates     = HTMLworkDates.replace("%data%", work.jobs[0].dates)
     var location  = HTMLworkLocation.replace("%data%", work.jobs[0].location);
     var desc      = HTMLworkDescription.replace("%data%", work.jobs[0].description);
+    // Place Values for Display
     $(".work-entry:last").append(employer + title);
     $(".work-entry:last").append(dates);
     $(".work-entry:last").append(location);
     $(".work-entry:last").append(desc);
-
   }
 }
 

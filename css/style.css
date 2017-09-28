@@ -64,10 +64,12 @@ h5 {
 
 span {
   color: white;
-  padding-right: 6px;
-  padding-left: 1px;
+  padding: 3px;
 }
 
+li {
+  margin: 5px;
+}
 
 .date-text {
   font-style: italic;

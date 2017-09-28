@@ -19,13 +19,20 @@ var bio = {
 // Education
 var education = {
     "schools": [{
-        "name": "Udacity",
-        "location": "Palo Alto",
-        "url": "",
-        "degree": "Front-End Web Developer",
-        "dates": "July 2017 - Oct 2017",
-        "major": [
-            "Web Development"
-        ]
+        "name": "CMU",
+        "location": "Pittsburgh",
+        "degree": "CS",
+        "dates": "Aug 2017 - Present",
+        "majors": ["Web Development"],
+        "url": "udacity.com"
+    }],
+
+    "online": [{
+      "title": "Front-End Web Developer"
+      "dates": "July 2017 - Present",
+      "school": "Udacity",
+      "url": "https://www.udacity.com"
     }]
 }
+
+//

@@ -230,3 +230,11 @@ img {
     display: block;
   }
 }
+
+/* Education Section */
+
+.remove-left-spacing {
+  margin-top: 15px;
+  padding-left: 0;
+  margin-left:  0;
+}

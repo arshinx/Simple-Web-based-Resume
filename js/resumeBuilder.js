@@ -57,10 +57,10 @@ var work = {
 var projects = {
   "projects": [
     {
-      "title": "",
-      "dates": "",
+      "title": "Tahoe on Web",
+      "dates": "May 2015",
       "description": "A Website featuring Lake Tahoe using various styling techniques — Built with HTML & CSS.",
-      "images": [""]
+      "images": ["https://s3-us-west-2.amazonaws.com/udacity-profiles/production/projects/1926548703-project-09aa932ebb6307a312889e6ad84570e1.png?t=1506614005419"]
     }
   ]
 }

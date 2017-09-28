@@ -238,3 +238,8 @@ img {
   padding-left: 0;
   margin-left:  0;
 }
+
+img {
+  opacity: 0.9;
+  box-shadow: inset 10px 10px 10px 10px #74cae4;
+}

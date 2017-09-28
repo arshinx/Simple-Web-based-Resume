@@ -27,11 +27,18 @@ var bio = {
     for (var i in bio.skills) {
         $("#skills").append(HTMLskills.replace("%data%", bio.skills[i]));
     }
-    // Contact info
+    // Collect Contact info
     var mobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
     var email = HTMLemail.replace("%data%", bio.contacts.email);
     var twitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
     var github = HTMLgithub.replace("%data%", bio.contacts.github);
+    var location = HTMLlocation.replace("%data%", bio.contacts.location);
+    // Display Contact Info
+    $("#topContacts").append(mobile);
+    $("#topContacts").append(email);
+    $("#topContacts").append(twitter);
+    $("#topContacts").append(github);
+    $("#topContacts").append(location);
   }
 };
 

@@ -100,7 +100,20 @@ var projects = {
   ],
   // Display Data from this object
   display: function() {
-
+    // Begin Project Section/Div
+    $("#projects").append("<div id=\"projects-foldable-content\"></div>");
+    $("#projects-foldable-content").append(HTMLprojectStart);
+    // Project Title
+    $(".project-entry:last").append(HTMLprojectTitle.replace("%data%", "<a href=\""+ projects.projects[0].link + "\" target=\"_bkank\">" + projects.projects[0].title + "</a>"));
+    // Project Date
+    $(".project-entry:last").append(HTMLprojectDates.replace("%data%", projects.projects[0].dates));
+    // Project Description
+    $(".project-entry:last").append(HTMLprojectDescription.replace("%data%", projects.projects[0].description));
+    // Since image(s) are optional, check if any are present
+    if (projects.projects[0].images.length > 0) {
+      // Display image(s)
+      $(".project-entry:last").append(HTMLprojectImage.replace("%data%", projects.projects[0].images[0]));
+    }
   }
 }
 

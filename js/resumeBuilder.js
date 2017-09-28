@@ -36,3 +36,13 @@ var education = {
 }
 
 // Work
+var work = {
+  "jobs": [{
+      "employer": "The Company",
+      "url": "thecompany.com",
+      "title": "Software Developer Intern",
+      "dates": "2016 - 2017",
+      "location": "San Francisco, USA",
+      "description": "Worked on developing an iOS app using Swift with social interaction capabilities."
+  }]
+}

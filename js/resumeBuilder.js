@@ -150,7 +150,23 @@ var education = {
   // Display Data from this object
   display : function() {
 
-  }
+    // Properties
+    var schoolName  = HTMLschoolName.replace("%data%", education.schools[0].name);
+    var school      = schoolName.replace("#", education.schools[0].url);
+    var degree      = HTMLschoolDegree.replace("%data%", education.schools[0].degree);
+    var dates       = HTMLschoolDates.replace("%data%", education.schools[0].dates);
+    var loc         = HTMLschoolLocation.replace("%data%", education.schools[0].location);
+    var major       = HTMLschoolMajor.replace("%data%", education.schools[0].major);
+
+    // Education
+    $("#education").append(HTMLschoolStart);
+    $(".education-entry:last").append(school);
+    $(".education-entry:last").append(degree);
+    $(".education-entry:last").append(dates);
+    $(".education-entry:last").append(loc);
+    $(".education-entry:last").append(major);
+
+      }
 }
 
 // Display Projects

@@ -27,6 +27,11 @@ var bio = {
     for (var i in bio.skills) {
         $("#skills").append(HTMLskills.replace("%data%", bio.skills[i]));
     }
+    // Contact info
+    var mobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
+    var email = HTMLemail.replace("%data%", bio.contacts.email);
+    var twitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
+    var github = HTMLgithub.replace("%data%", bio.contacts.github);
   }
 };
 

@@ -15,3 +15,17 @@ var bio = {
     "welcomeMessage": "Greetings!",
     "biopic": "images/fry.jpg"
 };
+
+// Education
+var education = {
+    "schools": [{
+        "name": "Udacity",
+        "location": "Palo Alto",
+        "url": "",
+        "degree": "Front-End Web Developer",
+        "dates": "July 2017 - Oct 2017",
+        "major": [
+            "Web Development"
+        ]
+    }]
+}

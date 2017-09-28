@@ -196,3 +196,8 @@ var education = {
 // Display Projects
 education.display();
 // ------------
+
+// Function to display a map
+function addMap() {
+    $("#mapDiv").append(googleMap);
+}

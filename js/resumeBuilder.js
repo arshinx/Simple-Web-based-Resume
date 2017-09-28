@@ -126,10 +126,10 @@ var projects = {
       $("#projects").append("<div id=\"projects-foldable-content\"></div>");
       $("#projects-foldable-content").append(HTMLprojectStart);
       // Properties
-      var title = HTMLprojectTitle.replace("%data%", "<a href=\""+ projects.projects[0].link + "\" target=\"_bkank\">" + projects.projects[0].title + "</a>");
-      var date  = HTMLprojectDates.replace("%data%", projects.projects[0].dates);
-      var desc  = HTMLprojectDescription.replace("%data%", projects.projects[0].description);
-      var image = HTMLprojectImage.replace("%data%", projects.projects[0].images[0]);
+      var title = HTMLprojectTitle.replace("%data%", "<a href=\""+ project.link + "\" target=\"_bkank\">" + projects.projects[0].title + "</a>");
+      var date  = HTMLprojectDates.replace("%data%", project.dates);
+      var desc  = HTMLprojectDescription.replace("%data%", project.description);
+      var image = HTMLprojectImage.replace("%data%", project.images[0]);
       // Project Title
       $(".project-entry:last").append(title);
       // Project Date

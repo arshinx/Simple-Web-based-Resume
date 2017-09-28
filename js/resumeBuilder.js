@@ -91,7 +91,7 @@ var work = {
       employer  = HTMLworkEmployer.replace("%data%", job.employer);
       title     = HTMLworkTitle.replace("%data%", job.title);
       employer  = employer.replace("#", job.url);
-      dates     = HTMLworkDates.replace("%data%", job.dates)
+      dates     = HTMLworkDates.replace("%data%", job.dates);
       location  = HTMLworkLocation.replace("%data%", job.location);
       desc      = HTMLworkDescription.replace("%data%", job.description);
       // Place Values for Display
@@ -101,7 +101,7 @@ var work = {
       $(".work-entry:last").append(desc);
     });
   }
-}
+};
 
 // Display Work
 work.display();
@@ -141,9 +141,9 @@ var projects = {
         // Display image(s)
         $(".project-entry:last").append(image);
       }
-  });
+    });
   }
-}
+};
 
 // Display Projects
 projects.display();
@@ -197,7 +197,7 @@ var education = {
     $(".education-entry:last").append(HTMLonlineDates.replace("%data%", education.online[0].dates));
     $(".education-entry:last").append(url.replace("#", education.online[0].url));
   }
-}
+};
 
 // Display Projects
 education.display();

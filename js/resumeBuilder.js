@@ -98,9 +98,9 @@ var projects = {
       "images": ["https://s3-us-west-2.amazonaws.com/udacity-profiles/production/projects/1926548703-project-09aa932ebb6307a312889e6ad84570e1.png?t=1506614005419"]
     }
   ],
-
+  // Display Data from this object
   display: function() {
-    
+
   }
 }
 

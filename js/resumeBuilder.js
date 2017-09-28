@@ -76,15 +76,22 @@ var work = {
   // Display Data from this object
   display: function() {
     for (var obj in this.jobs) {
+
+      // Declare
+      var employer;
+      var dates;
+      var location;
+      var desc;
+
       // Begin
       $("#workExperience").append(HTMLworkStart);
       // Retrieve and Define Properties
-      var employer  = HTMLworkEmployer.replace("%data%", work.jobs[0].employer);
-      title         = HTMLworkTitle.replace("%data%", work.jobs[0].title);
-      employer      = employer.replace("#", work.jobs[0].url);
-      var dates     = HTMLworkDates.replace("%data%", work.jobs[0].dates)
-      var location  = HTMLworkLocation.replace("%data%", work.jobs[0].location);
-      var desc      = HTMLworkDescription.replace("%data%", work.jobs[0].description);
+      employer  = HTMLworkEmployer.replace("%data%", work.jobs[obj].employer);
+      title     = HTMLworkTitle.replace("%data%", work.jobs[obj].title);
+      employer  = employer.replace("#", work.jobs[obj].url);
+      dates     = HTMLworkDates.replace("%data%", work.jobs[obj].dates)
+      location  = HTMLworkLocation.replace("%data%", work.jobs[obj].location);
+      desc      = HTMLworkDescription.replace("%data%", work.jobs[obj].description);
       // Place Values for Display
       $(".work-entry:last").append(employer + title);
       $(".work-entry:last").append(dates);

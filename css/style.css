@@ -71,6 +71,12 @@ li {
   margin: 5px;
 }
 
+hr {
+  border: 0;
+  background-color: rgba(75, 156, 55, 0.31);
+  height: 2px;
+}
+
 .date-text {
   font-style: italic;
   font-size: 14px;

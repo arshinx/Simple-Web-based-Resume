@@ -63,6 +63,14 @@ var work = {
       "dates": "2016 - 2017",
       "location": "San Francisco, USA",
       "description": "Worked on developing an iOS app using Swift with social interaction capabilities."
+    },
+    {
+      "employer": "Company2",
+      "url": "company2.com",
+      "title": "Product Intern",
+      "dates": "2015 - 2016",
+      "location": "San Francisco, USA",
+      "description": "Worked on a mobile product."
     }
   ],
   // Display Data from this object

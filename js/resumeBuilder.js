@@ -133,7 +133,7 @@ var projects = {
       // Project Description
       $(".project-entry:last").append(desc);
       // Since image(s) are optional, check if any are present
-      if (projects.projects[0].images.length > 0) {
+      if (project.images.length > 0) {
         // Display image(s)
         $(".project-entry:last").append(image);
       }

@@ -35,17 +35,9 @@ var bio = {
     var git     = HTMLgithub.replace("%data%", bio.contacts.github);
     var loc     = HTMLlocation.replace("%data%", bio.contacts.location);
     // Display Contact Info (Header)
-    $("#topContacts").append(mobile);
-    $("#topContacts").append(email);
-    $("#topContacts").append(twitter);
-    $("#topContacts").append(git);
-    $("#topContacts").append(loc);
+    $("#topContacts").append(mobile, email, twitter, git, loc);
     // Display Contact Info (Footer)
-    $("#footerContacts").append(mobile);
-    $("#footerContacts").append(email);
-    $("#footerContacts").append(twitter);
-    $("#footerContacts").append(git);
-    $("#footerContacts").append(loc);
+    $("#footerContacts").append(mobile, email, twitter, git, loc);
 
   }
 };

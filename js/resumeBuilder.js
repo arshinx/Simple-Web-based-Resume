@@ -195,8 +195,8 @@ var education = {
     this.onlineCourses.forEach(function(course) {
 
       // Properties
-      title = HTMLonlineTitle.replace("%data%", this.onlineCourses[0].title) + HTMLonlineSchool.replace("%data%", this.onlineCourses[0].school);
-      url = HTMLonlineURL.replace("%data%", this.onlineCourses[0].url);
+      title = HTMLonlineTitle.replace("%data%", course.title) + HTMLonlineSchool.replace("%data%", course.school);
+      url = HTMLonlineURL.replace("%data%", course.url);
 
       // Online Courses
       $(".education-entry:last").append(HTMLonlineClasses);

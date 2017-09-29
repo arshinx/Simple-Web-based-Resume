@@ -169,29 +169,41 @@ var education = {
   // Display Data from this object
   display : function() {
 
-    // Properties
-    var schoolName  = HTMLschoolName.replace("%data%", this.schools[0].name);
-    var school      = schoolName.replace("#", this.schools[0].url);
-    var degree      = HTMLschoolDegree.replace("%data%", this.schools[0].degree);
-    var dates       = HTMLschoolDates.replace("%data%", this.schools[0].dates);
-    var loc         = HTMLschoolLocation.replace("%data%", this.schools[0].location);
-    var major       = HTMLschoolMajor.replace("%data%", this.schools[0].majors);
+    // Declarations
+    var schoolName, school, degree, dates, loc, major, title, url;
 
-    var title = HTMLonlineTitle.replace("%data%", this.onlineCourses[0].title) + HTMLonlineSchool.replace("%data%", this.onlineCourses[0].school);
-    var url = HTMLonlineURL.replace("%data%", this.onlineCourses[0].url);
+    // Iteration - display all objects: Education
+    this.schools.forEach(function(school) {
 
-    // Education
-    $("#education").append(HTMLschoolStart);
-    $(".education-entry:last").append(school + degree);
-    $(".education-entry:last").append(dates);
-    $(".education-entry:last").append(loc);
-    $(".education-entry:last").append(major);
+      // Properties
+      schoolName  = HTMLschoolName.replace("%data%", school.name);
+      school      = schoolName.replace("#", school.url);
+      degree      = HTMLschoolDegree.replace("%data%", school.degree);
+      dates       = HTMLschoolDates.replace("%data%", school.dates);
+      loc         = HTMLschoolLocation.replace("%data%", school.location);
+      major       = HTMLschoolMajor.replace("%data%", school.majors);
 
-    // Online Classes
-    $(".education-entry:last").append(HTMLonlineClasses);
-    $(".education-entry:last").append(title.replace("#", education.onlineCourses[0].url));
-    $(".education-entry:last").append(HTMLonlineDates.replace("%data%", education.onlineCourses[0].dates));
-    $(".education-entry:last").append(url.replace("#", education.onlineCourses[0].url));
+      // Education
+      $("#education").append(HTMLschoolStart);
+      $(".education-entry:last").append(school + degree);
+      $(".education-entry:last").append(dates);
+      $(".education-entry:last").append(loc);
+      $(".education-entry:last").append(major);
+    }
+
+    // Iteration - display all objects: Online Courses
+    this.onlineCourses.forEach(function(course) {
+
+      // Properties
+      title = HTMLonlineTitle.replace("%data%", this.onlineCourses[0].title) + HTMLonlineSchool.replace("%data%", this.onlineCourses[0].school);
+      url = HTMLonlineURL.replace("%data%", this.onlineCourses[0].url);
+
+      // Online Courses
+      $(".education-entry:last").append(HTMLonlineClasses);
+      $(".education-entry:last").append(title.replace("#", course.url));
+      $(".education-entry:last").append(HTMLonlineDates.replace("%data%", course.dates));
+      $(".education-entry:last").append(url.replace("#", course.url));
+    }
   }
 };
 

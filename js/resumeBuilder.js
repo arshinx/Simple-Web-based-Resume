@@ -129,7 +129,11 @@ var projects = {
       var title = HTMLprojectTitle.replace("%data%", "<a href=\""+ project.link + "\" target=\"_bkank\">" + projects.projects[0].title + "</a>");
       var date  = HTMLprojectDates.replace("%data%", project.dates);
       var desc  = HTMLprojectDescription.replace("%data%", project.description);
-      var image = HTMLprojectImage.replace("%data%", project.images[0]);
+      var image;
+      project.images.forEach(function(image) {
+        // format and append image
+        image = HTMLprojectImage.replace("%data%", image);
+      });
       // Project Title
       $(".project-entry:last").append(title);
       // Project Date
@@ -162,7 +166,7 @@ var education = {
     }
   ],
 
-  "online": [
+  "onlineCourses": [
     {
     "title": "Front-End Web Developer",
     "dates": "July 2017 - Present",

@@ -189,7 +189,7 @@ var education = {
       $(".education-entry:last").append(dates);
       $(".education-entry:last").append(loc);
       $(".education-entry:last").append(major);
-    }
+    });
 
     // Iteration - display all objects: Online Courses
     this.onlineCourses.forEach(function(course) {
@@ -203,7 +203,7 @@ var education = {
       $(".education-entry:last").append(title.replace("#", course.url));
       $(".education-entry:last").append(HTMLonlineDates.replace("%data%", course.dates));
       $(".education-entry:last").append(url.replace("#", course.url));
-    }
+    });
   }
 };
 
